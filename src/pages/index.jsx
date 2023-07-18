@@ -32,11 +32,7 @@ export default function Home() {
             asperiores inventore id maxime veniam, impedit iste sit sapiente.
           </p>
           <Link href="/questions">
-            <Button
-              text="Start quiz"
-              type="secondary"
-              className="float-right"
-            />
+            <Button text="Start quiz" type="secondary" />
           </Link>
         </Container>
       </LoadingWrapper>
