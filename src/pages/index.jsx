@@ -1,4 +1,3 @@
-import { Chakra_Petch } from "next/font/google";
 import { Button, Container, LoadingWrapper, SettingsModal } from "@/components";
 import { Layout } from "@/layouts";
 import { setDefault } from "@/redux/slices/settingsSlice";
@@ -7,11 +6,6 @@ import { useAxios } from "../hooks";
 import { categoriesUrl } from "@/utils/urls";
 import { useEffect } from "react";
 import Link from "next/link";
-
-const chakra = Chakra_Petch({ 
-  subsets: ["latin"], 
-  weight: ["400", "500"] 
-});
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -29,7 +23,7 @@ export default function Home() {
     <Layout>
       <LoadingWrapper loading={loading}>
         <SettingsModal response={response} />
-        <Container className="flex flex-col items-center justify-center gap-10">
+        <Container className="flex flex-col items-center justify-center gap-10 h-full">
           <h1 className="text-8xl text-blue-900">Ready for Quiz?</h1>
           <p className="w-1/3 text-center text-red-800">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,

@@ -13,7 +13,7 @@ function Layout({ children }) {
     <div className={`flex flex-col w-full h-full relative ${ptSans.className}`}>
       <Header />
       <main className="flex-auto">{children}</main>
-      <Footer />k
+      <Footer />
     </div>
   );
 }

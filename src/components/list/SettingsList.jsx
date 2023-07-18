@@ -23,7 +23,7 @@ export default function SettingsList({ settings, response }) {
             >
               {setting.items.map((item, key) => (
                 <MenuItem value={item.id} key={key}>
-                  {item.name}
+                  <span className="text-red-700">{item.name}</span>
                 </MenuItem>
               ))}
             </Select>
@@ -44,7 +44,7 @@ export default function SettingsList({ settings, response }) {
           >
             {response.trivia_categories.map((item, key) => (
               <MenuItem value={item.id} key={key}>
-                {item.name}
+                <span className="text-red-700">{item.name}</span>
               </MenuItem>
             ))}
           </Select>
